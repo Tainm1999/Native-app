@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Property Id"
+        app:layout_constraintBottom_toBottomOf="@+id/tvid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvid" />
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Property Name"
+        app:layout_constraintBottom_toBottomOf="@+id/tvname"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/tvname" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvid"
+        app:layout_constraintStart_toStartOf="@+id/tvid"
+        app:layout_constraintTop_toBottomOf="@+id/tvid" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bedrooms"
+        app:layout_constraintBottom_toBottomOf="@+id/tvbed"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/tvbed" />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvfurniture"
+        app:layout_constraintStart_toStartOf="@+id/tvfurniture"
+        app:layout_constraintTop_toBottomOf="@+id/tvfurniture" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        app:layout_constraintBottom_toBottomOf="@+id/tvnote"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/tvnote"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/tvdate"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/tvdate" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvtime"
+        app:layout_constraintStart_toStartOf="@+id/tvtime"
+        app:layout_constraintTop_toBottomOf="@+id/tvtime" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Furniture types"
+        app:layout_constraintBottom_toBottomOf="@+id/tvfurniture"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/tvfurniture" />
+
+    <TextView
+        android:id="@+id/tvbed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvtype"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/tvtype"
+        app:layout_constraintTop_toBottomOf="@+id/tvtype" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvbed"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/tvbed"
+        app:layout_constraintTop_toBottomOf="@+id/tvbed" />
+
+    <TextView
+        android:id="@+id/tvnote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvprice"
+        app:layout_constraintStart_toStartOf="@+id/tvprice"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Property Type"
+        app:layout_constraintBottom_toBottomOf="@+id/tvtype"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/tvtype" />
+
+    <TextView
+        android:id="@+id/tvtype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvaddress"
+        app:layout_constraintStart_toStartOf="@+id/tvaddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvaddress" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="@+id/tvtime"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/tvtime" />
+
+    <TextView
+        android:id="@+id/tvfurniture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvdate"
+        app:layout_constraintStart_toStartOf="@+id/tvdate"
+        app:layout_constraintTop_toBottomOf="@+id/tvdate" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name of the reporter"
+        app:layout_constraintBottom_toBottomOf="@+id/tvreporter"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/tvreporter" />
+
+    <TextView
+        android:id="@+id/tvreporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvnote"
+        app:layout_constraintStart_toStartOf="@+id/tvnote"
+        app:layout_constraintTop_toBottomOf="@+id/tvnote" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Property Address"
+        app:layout_constraintBottom_toBottomOf="@+id/tvaddress"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/tvaddress" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Monthly rent price"
+        app:layout_constraintBottom_toBottomOf="@+id/tvprice"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/tvprice" />
+
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvname"
+        app:layout_constraintStart_toStartOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+</androidx.constraintlayout.widget.ConstraintLayout>
